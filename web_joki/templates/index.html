@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Web JokiPython</title>
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Feather Icons -->
+        <script src="https://unpkg.com/feather-icons"></script>
+
+        <!-- My Style -->
+        <link rel="stylesheet" href="{{url_for('static',filename='css/style2.css')}}"/>
+
+    </head>
+    <body>
+        <!-- Navbar start -->
+        <nav class="navbar">
+            <a href="#home" class="navbar-logo">jokiTugas<span>Python</span></a>
+
+            <div class="navbar-nav">
+                <a href="#home">Home</a>
+                <a href="#services">Layanan</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#order">Order</a>
+                <a href="/login">Login</a>
+            </div>
+            <div class="navbar-extra">
+                <a href="#dummy" id="hamburger-menu"><i data-feather="menu"></i></a>
+            </div>
+        </nav>
+        <!-- Navbar end -->
+
+        <!-- Hero Section start -->
+        <section class="hero" id="home">
+            <main class="content">
+                <p>Kami Siap Melayani Anda</p>
+                <h1>Jasa Joki Python:</h1>
+                <div class="title">
+                    <h1>Ter</h1>
+                    <div class="slider">
+                        <h1>amanah</h1>
+                        <h1>murah</h1>
+                        <h1>cepat</h1>
+                    </div>
+                </div>
+                <p>Website Pengerjaan Program Python Terbaik Indonesia</p>
+                <a href="https://wa.link/544vz5" target="_blank"" class="cta">WhatsApp</a>
+            </main>
+        </section>
+        <!-- Hero Section end -->
+
+        <!-- Our Service start-->
+        <section class="container" id="services">
+            <div class="service-wrapper">
+                <div class="service">
+                    <h2>Mengapa Harus jokiTugas<span>Python</span></h2>
+                    <p>Ini beberapa alasan mengapa kamu harus mempercayakan joki python kepada jokiTugasPython.com</p>
+                    <div class="cards">
+                        <div class="card">
+                            <p><i class="icon" data-feather="lock" width="100" height="50"></i></p>
+                            <h2>Privasi Aman 100%</h2>
+                            <p>jokiTugasPython selalu berkomitmen untuk menjaga data dan privasi pelanggan.</p>
+                        </div>
+                        <div class="card">
+                            <p><i class="icon" data-feather="book-open" width="100" height="50"></i></p>
+                            <h2>Semua Jenis Tugas</h2>
+                            <p>jokiTugasPython memiliki tim ahli dibidang jasa pengerjaan tugas apapun.</p>
+                        </div>
+                        <div class="card">
+                            <p><i class="icon" data-feather="message-circle" width="100" height="50"></i></p>
+                            <h2>Layanan 24 Jam</h2>
+                            <p>jokiTugasPython siap membantu kamu dalam mengerjakan tugas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Service end-->
+
+        <!-- About Section start -->
+        <section id="about" class="about">
+            <h2>Tentang jokiTugas<span>Python</span></h2>
+            <div class="row">
+                <div class="about-img">
+                    <img src="{{url_for('static',filename='assets/about.jpg')}}" alt="about" />
+                </div>
+                <div class="content">
+                    <p><span>jokiTugasPython</span> berdiri sejak tahun 2023 dan resmi berdiri menjadi platform yang menyediakan jasa joki python. Bahkan <span> kami bisa mengerjakan Machine Learning dan Analisis Data</span></p>
+                    <p>
+                        Saat ini <span>Jokitugaslo didukung oleh Team Mahasiswa UTY</span>yang siap mengerjakan program python kamu. Penjoki - penjoki yang ada di jokiTugasPython merupakan penjoki terpilih yang sudah diseleksi oleh team
+                        JTP. Setiap bulannya, <span>jokiTugasPython telah mengerjakan banyak project</span> bermacam jenis seperti berbasis GUI, Machine Learning, maupun Analisis Data.
+                    </p>
+                    <p>Tunggu apalagi? Serahkan tugasmu ke team jokiTugasPython agar segera kami selesaikan!</p>
+                </div>
+            </div>
+        </section>
+        <!-- About Section start -->
+
+        <!-- Menu Section start -->
+        <section id="menu" class="menu">
+            <h2>Materi jokiTugas<span>Python</span></h2>
+            <p>Kami siap membantu kamu mengenai seluruh materi python dengan tim ahli yang berkompeten</p>
+            <div class="row">
+                <div class="menu-card">
+                    <img class="menu1" src="{{url_for('static',filename='assets/menu1.png')}}"  alt="python" />
+                    <h1 class="menu-card-title">- PYTHON -</h1>
+                </div>
+                <div class="menu-card">
+                    <img class="menu2" src="{{url_for('static',filename='assets/menu2.png')}}"  alt="python" />
+                    <h1 class="menu-card-title">- MACHINE LEARNING -</h1>
+                </div>
+                <div class="menu-card">
+                    <img class="menu3" src="{{url_for('static',filename='assets/menu3.png')}}"  alt="python" />
+                    <h1 class="menu-card-title">- DATA ANALYST -</h1>
+                </div>
+            </div>
+        </section>
+        <!-- Menu Section end -->
+
+        <!-- Order Section start-->
+        <section class="order" id="order">
+            <h2>Silahkan Order jokiTugas<span>Python</span></h2>
+            <p class="deskirpsi">Kami memberikan kemudahan dalam proses order jasa joki tugas demi kenyamanan pelayanan</p>
+            <div class="row">
+                <div class="order-card">
+                    <div class="order-image">
+                        <img src=".{{url_for('static',filename='assets/order1.jpg')}}"  alt="order1" />
+                    </div>
+                    <div class="order-content">
+                        <h3>Joki Python</h3>
+                        <p>Order Dibawah ini</p>
+                        <a href="https://wa.link/544vz5" target="_blank" class="cta">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="order-image">
+                        <img src="{{url_for('static',filename='assets/order2.jpg')}}"  alt="order1" />
+                    </div>
+                    <div class="order-content">
+                        <h3>Joki Machine Learning</h3>
+                        <p>Order Dibawah ini</p>
+                        <a href="https://wa.link/ci9zqw" target="_blank" class="cta">WhatsApp</a>
+                    </div>
+                </div>
+                <div class="order-card">
+                    <div class="order-image">
+                        <img src="{{url_for('static',filename='assets/order3.jpg')}}" alt="order1" />
+                    </div>
+                    <div class="order-content">
+                        <h3>Joki Analisis Data</h3>
+                        <p>Order Dibawah ini</p>
+                        <a href="https://wa.link/epfm53" target="_blank" class="cta">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Order Section  start -->
+
+        <!-- Footer Section start -->
+        <footer>
+            <div class="sosials">
+                <a href="https://www.instagram.com/thoriqtau/" target="_blank"><i data-feather="instagram"></i></a>
+                <a href="https://twitter.com/thoriqtau/" target="_blank"><i data-feather="twitter"></i></a>
+                <a href="https://github.com/thoriqtau/" target="_blank"><i data-feather="github"></i></a>
+            </div>
+            <div class="links">
+                <a href="#home">Home</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#order">Order</a>
+            </div>
+            <div class="credit">
+                <p>Created by <a>jokiTugasPython</a>. | &copy; 2024.</p>
+            </div>
+        </footer>
+        <!-- Footer Section end -->
+
+        <!-- Feather Icons -->
+        <script>
+            feather.replace();
+        </script>
+
+        <!-- My Javascript -->
+        <script src="{{url_for('static',filename='js/script.js')}}"></script>
+    </body>
+</html>
