@@ -346,7 +346,7 @@ body {
 }
 
 .order .order-content h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .order .order-content p {
@@ -371,9 +371,6 @@ body {
 }
 
 /* Footer Section */
-.order {
-    height: 800px;
-}
 footer {
     background-color: #3877ad;
     text-align: center;
